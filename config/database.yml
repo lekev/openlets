@@ -1,0 +1,11 @@
+development:
+  adapter: postgresql
+  database: openlets_development
+  username: <%= (ENV['PGUSER'] || 'rails').to_s %>
+  password: <%= (ENV['PGPASS'] || '').to_s %>
+
+test:
+  adapter: postgresql
+  database: openlets_test
+  username: <%= (ENV['PGUSER'] || 'rails').to_s %>
+  password: <%= (ENV['PGPASS'] || '').to_s %>
